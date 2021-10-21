@@ -1,4 +1,4 @@
-package entity;
+package database;
 
 import java.io.Serializable;
 import java.util.UUID;
@@ -6,7 +6,7 @@ import java.util.UUID;
 /**
  * An interface for expressing the necessary details to store an item in a database.
  */
-public interface Storable {
+public interface Storable extends Serializable {
     /**Returns the UUID corresponding to the object.
      *
      * @return The uuid corresponding to the object.
